@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+config QCOM_RTSS_MAILBOX
+	tristate "Qualcomm Technologies, Inc. RTSS Mailbox Driver"
+	depends on MAILBOX && QCOM_IPCC
+	default n
+	help
+	  Qualcomm Technologies, Inc. RTSS mailbox IPC driver.
+	  The RTSS mailbox IPC driver facilitates communication
+	  between APSS and RTSS.
+
+	  Requires the QCOM IPCC mailbox controller (QCOM_IPCC) which
+	  provides the mbox channels used by this driver.
+
+	  If unsure, say 'N'.

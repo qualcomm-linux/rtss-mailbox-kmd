@@ -1,0 +1,29 @@
+# Editor and OS artifacts
+*~
+*.swp
+*.swo
+.DS_Store
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Kernel module build artifacts
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.o
+*.order
+*.symvers
+modules.builtin
+modules.builtin.modinfo
+Module.symvers
+modules.order
+
+# Kernel build system generated
+.tmp_versions/
+.cache.mk
+.*.cmd
+*.cmd
